@@ -5,6 +5,7 @@
         <attribute name="assetItemId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="expectedReturnDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="friendlyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scanCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="transfer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferAssetMapping" inverseName="asset" inverseEntity="DBTransferAssetMapping" syncable="YES"/>
         <relationship name="transferErrors" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferErrors" inverseName="asset" inverseEntity="DBTransferErrors" syncable="YES"/>
@@ -51,7 +52,7 @@
         <relationship name="transferDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferDetails" inverseName="transferErrors" inverseEntity="DBTransferDetails" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DBAsset" positionX="9268" positionY="-5229" width="128" height="148"/>
+        <element name="DBAsset" positionX="9268" positionY="-5229" width="128" height="163"/>
         <element name="DBTransferAssetMapping" positionX="8980" positionY="-5125" width="128" height="103"/>
         <element name="DBTransferCart" positionX="8721" positionY="-5418" width="128" height="298"/>
         <element name="DBTransferDetails" positionX="8919" positionY="-5589" width="128" height="133"/>
