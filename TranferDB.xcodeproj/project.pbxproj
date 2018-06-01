@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48CBB3E20BE7B010023930F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CBB3D20BE7B010023930F /* AppDelegate.swift */; };
+		D48CBB4020BE7B010023930F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CBB3F20BE7B010023930F /* ViewController.swift */; };
+		D48CBB4320BE7B010023930F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48CBB4120BE7B010023930F /* Main.storyboard */; };
+		D48CBB4620BE7B010023930F /* TranferDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D48CBB4420BE7B010023930F /* TranferDB.xcdatamodeld */; };
+		D48CBB4820BE7B010023930F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48CBB4720BE7B010023930F /* Assets.xcassets */; };
+		D48CBB4B20BE7B010023930F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48CBB4920BE7B010023930F /* LaunchScreen.storyboard */; };
+		D48CBB5620BE7B010023930F /* TranferDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CBB5520BE7B010023930F /* TranferDBTests.swift */; };
+		D48CBB6120BE7B010023930F /* TranferDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CBB6020BE7B010023930F /* TranferDBUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D48CBB5220BE7B010023930F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48CBB3220BE7B010023930F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48CBB3920BE7B010023930F;
+			remoteInfo = TranferDB;
+		};
+		D48CBB5D20BE7B010023930F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D48CBB3220BE7B010023930F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D48CBB3920BE7B010023930F;
+			remoteInfo = TranferDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D48CBB3A20BE7B010023930F /* TranferDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranferDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48CBB3D20BE7B010023930F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D48CBB3F20BE7B010023930F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D48CBB4220BE7B010023930F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D48CBB4520BE7B010023930F /* TranferDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TranferDB.xcdatamodel; sourceTree = "<group>"; };
+		D48CBB4720BE7B010023930F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D48CBB4A20BE7B010023930F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D48CBB4C20BE7B010023930F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48CBB5120BE7B010023930F /* TranferDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranferDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48CBB5520BE7B010023930F /* TranferDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranferDBTests.swift; sourceTree = "<group>"; };
+		D48CBB5720BE7B010023930F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48CBB5C20BE7B010023930F /* TranferDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranferDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48CBB6020BE7B010023930F /* TranferDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranferDBUITests.swift; sourceTree = "<group>"; };
+		D48CBB6220BE7B010023930F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D48CBB3720BE7B010023930F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB4E20BE7B010023930F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB5920BE7B010023930F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48CBB3120BE7B010023930F = {
+			isa = PBXGroup;
+			children = (
+				D48CBB3C20BE7B010023930F /* TranferDB */,
+				D48CBB5420BE7B010023930F /* TranferDBTests */,
+				D48CBB5F20BE7B010023930F /* TranferDBUITests */,
+				D48CBB3B20BE7B010023930F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48CBB3B20BE7B010023930F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D48CBB3A20BE7B010023930F /* TranferDB.app */,
+				D48CBB5120BE7B010023930F /* TranferDBTests.xctest */,
+				D48CBB5C20BE7B010023930F /* TranferDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48CBB3C20BE7B010023930F /* TranferDB */ = {
+			isa = PBXGroup;
+			children = (
+				D48CBB3D20BE7B010023930F /* AppDelegate.swift */,
+				D48CBB3F20BE7B010023930F /* ViewController.swift */,
+				D48CBB4120BE7B010023930F /* Main.storyboard */,
+				D48CBB4720BE7B010023930F /* Assets.xcassets */,
+				D48CBB4920BE7B010023930F /* LaunchScreen.storyboard */,
+				D48CBB4C20BE7B010023930F /* Info.plist */,
+				D48CBB4420BE7B010023930F /* TranferDB.xcdatamodeld */,
+			);
+			path = TranferDB;
+			sourceTree = "<group>";
+		};
+		D48CBB5420BE7B010023930F /* TranferDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				D48CBB5520BE7B010023930F /* TranferDBTests.swift */,
+				D48CBB5720BE7B010023930F /* Info.plist */,
+			);
+			path = TranferDBTests;
+			sourceTree = "<group>";
+		};
+		D48CBB5F20BE7B010023930F /* TranferDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D48CBB6020BE7B010023930F /* TranferDBUITests.swift */,
+				D48CBB6220BE7B010023930F /* Info.plist */,
+			);
+			path = TranferDBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D48CBB3920BE7B010023930F /* TranferDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48CBB6520BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDB" */;
+			buildPhases = (
+				D48CBB3620BE7B010023930F /* Sources */,
+				D48CBB3720BE7B010023930F /* Frameworks */,
+				D48CBB3820BE7B010023930F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranferDB;
+			productName = TranferDB;
+			productReference = D48CBB3A20BE7B010023930F /* TranferDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D48CBB5020BE7B010023930F /* TranferDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48CBB6820BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDBTests" */;
+			buildPhases = (
+				D48CBB4D20BE7B010023930F /* Sources */,
+				D48CBB4E20BE7B010023930F /* Frameworks */,
+				D48CBB4F20BE7B010023930F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48CBB5320BE7B010023930F /* PBXTargetDependency */,
+			);
+			name = TranferDBTests;
+			productName = TranferDBTests;
+			productReference = D48CBB5120BE7B010023930F /* TranferDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D48CBB5B20BE7B010023930F /* TranferDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48CBB6B20BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDBUITests" */;
+			buildPhases = (
+				D48CBB5820BE7B010023930F /* Sources */,
+				D48CBB5920BE7B010023930F /* Frameworks */,
+				D48CBB5A20BE7B010023930F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D48CBB5E20BE7B010023930F /* PBXTargetDependency */,
+			);
+			name = TranferDBUITests;
+			productName = TranferDBUITests;
+			productReference = D48CBB5C20BE7B010023930F /* TranferDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48CBB3220BE7B010023930F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Vaibhav Bangde";
+				TargetAttributes = {
+					D48CBB3920BE7B010023930F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D48CBB5020BE7B010023930F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D48CBB3920BE7B010023930F;
+					};
+					D48CBB5B20BE7B010023930F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D48CBB3920BE7B010023930F;
+					};
+				};
+			};
+			buildConfigurationList = D48CBB3520BE7B010023930F /* Build configuration list for PBXProject "TranferDB" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D48CBB3120BE7B010023930F;
+			productRefGroup = D48CBB3B20BE7B010023930F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D48CBB3920BE7B010023930F /* TranferDB */,
+				D48CBB5020BE7B010023930F /* TranferDBTests */,
+				D48CBB5B20BE7B010023930F /* TranferDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D48CBB3820BE7B010023930F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48CBB4B20BE7B010023930F /* LaunchScreen.storyboard in Resources */,
+				D48CBB4820BE7B010023930F /* Assets.xcassets in Resources */,
+				D48CBB4320BE7B010023930F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB4F20BE7B010023930F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB5A20BE7B010023930F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D48CBB3620BE7B010023930F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48CBB4020BE7B010023930F /* ViewController.swift in Sources */,
+				D48CBB3E20BE7B010023930F /* AppDelegate.swift in Sources */,
+				D48CBB4620BE7B010023930F /* TranferDB.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB4D20BE7B010023930F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48CBB5620BE7B010023930F /* TranferDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48CBB5820BE7B010023930F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48CBB6120BE7B010023930F /* TranferDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D48CBB5320BE7B010023930F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48CBB3920BE7B010023930F /* TranferDB */;
+			targetProxy = D48CBB5220BE7B010023930F /* PBXContainerItemProxy */;
+		};
+		D48CBB5E20BE7B010023930F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D48CBB3920BE7B010023930F /* TranferDB */;
+			targetProxy = D48CBB5D20BE7B010023930F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D48CBB4120BE7B010023930F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48CBB4220BE7B010023930F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D48CBB4920BE7B010023930F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48CBB4A20BE7B010023930F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48CBB6320BE7B010023930F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D48CBB6420BE7B010023930F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48CBB6620BE7B010023930F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D48CBB6720BE7B010023930F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D48CBB6920BE7B010023930F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TranferDB.app/TranferDB";
+			};
+			name = Debug;
+		};
+		D48CBB6A20BE7B010023930F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TranferDB.app/TranferDB";
+			};
+			name = Release;
+		};
+		D48CBB6C20BE7B010023930F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TranferDB;
+			};
+			name = Debug;
+		};
+		D48CBB6D20BE7B010023930F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8PVMCY7KL;
+				INFOPLIST_FILE = TranferDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ict.alltrak.dev.TranferDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TranferDB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D48CBB3520BE7B010023930F /* Build configuration list for PBXProject "TranferDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48CBB6320BE7B010023930F /* Debug */,
+				D48CBB6420BE7B010023930F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48CBB6520BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48CBB6620BE7B010023930F /* Debug */,
+				D48CBB6720BE7B010023930F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48CBB6820BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48CBB6920BE7B010023930F /* Debug */,
+				D48CBB6A20BE7B010023930F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48CBB6B20BE7B010023930F /* Build configuration list for PBXNativeTarget "TranferDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48CBB6C20BE7B010023930F /* Debug */,
+				D48CBB6D20BE7B010023930F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D48CBB4420BE7B010023930F /* TranferDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D48CBB4520BE7B010023930F /* TranferDB.xcdatamodel */,
+			);
+			currentVersion = D48CBB4520BE7B010023930F /* TranferDB.xcdatamodel */;
+			path = TranferDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D48CBB3220BE7B010023930F /* Project object */;
+}

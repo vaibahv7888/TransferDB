@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DBAsset" representedClassName="DBAsset" syncable="YES" codeGenerationType="class">
+        <attribute name="assetId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="assetItemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expectedReturnDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendlyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transfer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferAssetMapping" inverseName="asset" inverseEntity="DBTransferAssetMapping" syncable="YES"/>
+        <relationship name="transferErrors" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferErrors" inverseName="asset" inverseEntity="DBTransferErrors" syncable="YES"/>
+    </entity>
+    <entity name="DBTransferAssetMapping" representedClassName="DBTransferAssetMapping" syncable="YES" codeGenerationType="class">
+        <attribute name="assetItemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="asset" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBAsset" inverseName="transfer" inverseEntity="DBAsset" syncable="YES"/>
+        <relationship name="transfer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferCart" inverseName="transferItems" inverseEntity="DBTransferCart" syncable="YES"/>
+    </entity>
+    <entity name="DBTransferCart" representedClassName="DBTransferCart" syncable="YES" codeGenerationType="class">
+        <attribute name="destinationLocationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expectedReturnDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromLocationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="transferedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferFromEmployee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferFromLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transferToEmployee" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transferToLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transferDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferDetails" inverseName="transfer" inverseEntity="DBTransferDetails" syncable="YES"/>
+        <relationship name="transferErrors" toMany="YES" deletionRule="Nullify" destinationEntity="DBTransferErrors" inverseName="transfer" inverseEntity="DBTransferErrors" syncable="YES"/>
+        <relationship name="transferItems" toMany="YES" deletionRule="Nullify" destinationEntity="DBTransferAssetMapping" inverseName="transfer" inverseEntity="DBTransferAssetMapping" syncable="YES"/>
+    </entity>
+    <entity name="DBTransferDetails" representedClassName="DBTransferDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="signatureBase64" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signaturePoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signeeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="transfer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferCart" inverseName="transferDetails" inverseEntity="DBTransferCart" syncable="YES"/>
+        <relationship name="transferErrors" toMany="YES" deletionRule="Nullify" destinationEntity="DBTransferErrors" inverseName="transferDetails" inverseEntity="DBTransferErrors" syncable="YES"/>
+    </entity>
+    <entity name="DBTransferErrors" representedClassName="DBTransferErrors" syncable="YES" codeGenerationType="class">
+        <attribute name="assetItemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="errorType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="asset" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBAsset" inverseName="transferErrors" inverseEntity="DBAsset" syncable="YES"/>
+        <relationship name="transfer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferCart" inverseName="transferErrors" inverseEntity="DBTransferCart" syncable="YES"/>
+        <relationship name="transferDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBTransferDetails" inverseName="transferErrors" inverseEntity="DBTransferDetails" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DBAsset" positionX="9268" positionY="-5229" width="128" height="148"/>
+        <element name="DBTransferAssetMapping" positionX="8980" positionY="-5125" width="128" height="103"/>
+        <element name="DBTransferCart" positionX="8721" positionY="-5418" width="128" height="298"/>
+        <element name="DBTransferDetails" positionX="8919" positionY="-5589" width="128" height="133"/>
+        <element name="DBTransferErrors" positionX="9223" positionY="-5490" width="128" height="133"/>
+    </elements>
+</model>
